@@ -13,8 +13,7 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 
 //here we are connecting to our mongoose db
-//mongoose.connect(`mongodb+srv://admin-jarodr:${process.env.DBPW}@cluster0.0fula.mongodb.net/todolistDb?retryWrites=true&w=majority`, {useNewUrlParser: true});
-mongoose.connect(`mongodb+srv://admin-jarodr:LAmbanmeelescroto0713@cluster0.0fula.mongodb.net/todolistDb?retryWrites=true&w=majority`, {useNewUrlParser: true});
+mongoose.connect(`mongodb+srv://admin-jarodr:${process.env.DBPW}@cluster0.0fula.mongodb.net/todolistDb?retryWrites=true&w=majority`, {useNewUrlParser: true});
 
 //this is the schema we will be using to store todo items
 const itemsSchema = new mongoose.Schema ({
